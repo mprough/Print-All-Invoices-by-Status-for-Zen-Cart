@@ -1,6 +1,6 @@
 # Print all invoices and packing slips by status for Zen Cart
 
-Print every invoice or packing slip for orders with a selected order status in one printable batch. Each document begins on a separate printed page. The current release is **v3.0.1**.
+Print every invoice or packing slip for orders with a selected order status in one printable batch. Each document begins on a separate printed page. The current release is **v3.0.2**.
 
 Version 3 uses the store's own native Zen Cart invoice and packing-slip pages. That preserves the current Zen Cart layout, product images, tax display, notifier output, and compatible site-specific customizations instead of maintaining outdated copies of those documents inside this plugin.
 
