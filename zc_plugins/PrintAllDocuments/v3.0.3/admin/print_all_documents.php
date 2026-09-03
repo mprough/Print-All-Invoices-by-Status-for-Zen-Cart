@@ -71,7 +71,8 @@ if ($generate) {
     <div class="container-fluid">
         <h1><?= HEADING_TITLE ?></h1>
         <p><?= TEXT_INTRODUCTION ?></p>
-        <form method="get" action="<?= zen_href_link(FILENAME_PRINT_ALL_DOCUMENTS) ?>" target="_blank" class="form-horizontal">
+        <form method="get" action="index.php" target="_blank" class="form-horizontal">
+            <?= zen_draw_hidden_field('cmd', FILENAME_PRINT_ALL_DOCUMENTS) ?>
             <?= zen_draw_hidden_field('generate', '1') ?>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="status"><?= TEXT_ORDER_STATUS ?></label>

@@ -1,5 +1,16 @@
 # Changelog
 
+## v3.0.3 - 2026-09-03
+
+- Preserves the Zen Cart admin router's `cmd=print_all_documents` parameter when the GET form is submitted.
+- Fixes generated batch requests falling back to the admin home page as `index.php?generate=1...`.
+- Distribution now contains only the current Plugin Manager version so obsolete malformed language files cannot be loaded merely by selecting the plugin.
+
+## v3.0.2 - 2026-09-03
+
+- Fixed the Plugin Manager extra-definitions language file to return an array as required by Zen Cart's `ArraysLanguageLoader`.
+- Prevents the HTTP 500 and `loadArrayDefineFile(): Return value must be of type array, int returned` fatal error immediately after selecting the plugin.
+
 ## v3.0.1 - 2026-09-03
 
 - Corrected the Plugin Manager scripted installer that produced an HTTP 500 during installation.

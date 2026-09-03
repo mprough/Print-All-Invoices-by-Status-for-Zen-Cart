@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'pluginVersion' => 'v3.0.1',
+    'pluginVersion' => 'v3.0.3',
     'pluginName' => 'Print all invoices and packing slips by status',
     'pluginDescription' => 'Prints the current Zen Cart invoice or packing slip for every order with a selected status.',
     'pluginAuthor' => 'PRO-Webs.net',
