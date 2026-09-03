@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0.6 - 2026-09-03
+
+- Registers the document compatibility init script with Zen Cart's admin autoloader so the v3.0.4-v3.0.5 targeted deprecation handler actually runs.
+
 ## v3.0.5 - 2026-09-03
 
 - Extends the narrowly scoped Zen Cart separator-deprecation handler to native invoice batch requests as well as packing-slip batch requests.
