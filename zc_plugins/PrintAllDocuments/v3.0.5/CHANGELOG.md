@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0.5 - 2026-09-03
+
+- Extends the narrowly scoped Zen Cart separator-deprecation handler to native invoice batch requests as well as packing-slip batch requests.
+
 ## v3.0.4 - 2026-09-03
 
 - Prevents Zen Cart's native packing-slip separator from logging its PHP 8.4+ `str_contains(): Passing null` deprecation during batch generation.

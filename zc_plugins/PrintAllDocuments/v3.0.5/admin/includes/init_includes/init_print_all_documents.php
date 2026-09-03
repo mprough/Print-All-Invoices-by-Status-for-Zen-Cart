@@ -1,9 +1,9 @@
 <?php
 /**
- * Suppress a narrowly scoped Zen Cart packing-slip deprecation during batch generation.
+ * Suppress a narrowly scoped Zen Cart document deprecation during batch generation.
  *
  * Zen Cart 2.2.x passes a null image width from zen_draw_separator() to zen_image()
- * on its native packing-slip page. PHP 8.4+ reports that core behavior when
+ * on its native invoice and packing-slip pages. PHP 8.4+ reports that core behavior when
  * str_contains() receives the null value. Other errors continue to use Zen Cart's
  * previously registered error handler.
  */
@@ -13,7 +13,7 @@ if (
     && $_GET['print_all_documents'] === '1'
     && isset($_SERVER['HTTP_X_REQUESTED_WITH'])
     && strtolower((string)$_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest'
-    && basename((string)($_SERVER['SCRIPT_NAME'] ?? '')) === 'packingslip.php'
+    && in_array(basename((string)($_SERVER['SCRIPT_NAME'] ?? '')), ['invoice.php', 'packingslip.php'], true)
 ) {
     $printAllDocumentsPreviousErrorHandler = null;
     $printAllDocumentsPreviousErrorHandler = set_error_handler(
