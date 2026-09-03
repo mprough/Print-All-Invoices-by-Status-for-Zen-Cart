@@ -133,7 +133,7 @@ if ($generate) {
     const format = (template, values) => template.replace(/%(\d+)\$[ds]/g, (_, index) => String(values[Number(index) - 1]));
 
     async function loadDocument(orderId) {
-        const response = await fetch(`${endpoint}?oID=${encodeURIComponent(orderId)}`, {
+        const response = await fetch(`${endpoint}?oID=${encodeURIComponent(orderId)}&print_all_documents=1`, {
             credentials: 'same-origin',
             headers: {'X-Requested-With': 'XMLHttpRequest'}
         });

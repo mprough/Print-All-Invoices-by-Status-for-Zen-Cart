@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.0.4 - 2026-09-03
+
+- Prevents Zen Cart's native packing-slip separator from logging its PHP 8.4+ `str_contains(): Passing null` deprecation during batch generation.
+- The compatibility handler is limited to marked packing-slip batch requests and forwards every unrelated error to Zen Cart's existing error handler.
+
 ## v3.0.3 - 2026-09-03
 
 - Preserves the Zen Cart admin router's `cmd=print_all_documents` parameter when the GET form is submitted.
