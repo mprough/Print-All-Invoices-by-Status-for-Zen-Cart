@@ -1,0 +1,23 @@
+# Changelog
+
+## v3.0.0 - 2026-09-03
+
+- Added batch printing for both invoices and packing slips from one Reports menu page.
+- Rebuilt the plugin for the Zen Cart Plugin Manager.
+- Uses the installed store's native invoice and packing-slip pages so current Zen Cart output, notifiers, images, taxes, and compatible customizations are retained.
+- Loads orders sequentially to avoid a burst of simultaneous admin requests.
+- Added progress, error reporting, print styling, empty-status handling, and admin-session detection.
+- Removed the legacy hardcoded action that changed every selected order to status ID 2.
+- Added Zen Cart 2.0.1 through 2.2.2 and PHP 8 compatibility.
+
+## v2.5 - 2016-03-16
+
+- Added the ability to update the status of displayed invoice orders.
+
+## v2.1 - 2014
+
+- Added printing of all packing slips for a selected order status.
+
+## v2.0.0 - 2012-05-18
+
+- Updated the original All Invoices plugin for Zen Cart 1.5.0.
