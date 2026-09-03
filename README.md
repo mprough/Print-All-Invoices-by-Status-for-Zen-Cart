@@ -2,6 +2,8 @@
 
 Print every invoice or packing slip for orders with a selected order status in one printable batch. Each document begins on a separate printed page. The current release is **v3.0.6**.
 
+**Official Zen Cart plugin page:** [All Invoices](https://www.zen-cart.com/plugins/all-invoices-vb1083)
+
 Version 3 uses the store's own native Zen Cart invoice and packing-slip pages. That preserves the current Zen Cart layout, product images, tax display, notifier output, and compatible site-specific customizations instead of maintaining outdated copies of those documents inside this plugin.
 
 ## Features
@@ -43,6 +45,18 @@ The printable batch opens in a separate tab. A failed individual order is report
 
 Remove the old manually installed `all_invoices.php`, `all_packingslips.php`, associated templates, language files, extra-datafile, and legacy auto-installer after making a backup. Then install v3 through Plugin Manager. The v3 installer removes the two obsolete v2.x Reports menu registrations; it does not delete old files automatically.
 
+Legacy files to remove from the renamed admin directory:
+
+- `all_invoices.php`
+- `all_packingslips.php`
+- `includes/extra_datafiles/all_invoices_filenames.php`
+- `includes/functions/extra_functions/init_all_invoices.php`
+- `includes/languages/english/all_invoices.php`
+- `includes/languages/english/all_packingslips.php`
+- `includes/languages/english/extra_definitions/all_invoices_definitions.php`
+- `includes/templates/tpl_all_invoices.php`
+- `includes/templates/tpl_all_packingslips.php`
+
 Version 3 deliberately removes v2.5's hardcoded **Change Status to 2-Processed** action. Printing documents should not silently alter order workflow, and status ID 2 is not guaranteed to represent the same business state on every store.
 
 ## Uninstallation
@@ -55,15 +69,18 @@ The plugin assembles the native `invoice.php` and `packingslip.php` output from 
 
 ## Support
 
-- Bugs: [PRO-Webs support](https://prowebsinc.zohodesk.com/portal/en/newticket)
-- Zen Cart plugin listing: [All Invoices](https://www.zen-cart.com/plugins/all-invoices-vb1083)
+- Bug reports: [PRO-Webs support](https://prowebsinc.zohodesk.com/portal/en/newticket)
+- Official distribution page: [Zen Cart - All Invoices](https://www.zen-cart.com/plugins/all-invoices-vb1083)
 
 This software is provided without warranty. Installation and customization are not included. Custom work is available at the current hourly rate.
 
 ## Credits
 
-- Original All Invoices plugin: Mathew O'Marah, mdo design, 2010
-- Zen Cart 1.5 updates and packing-slip support: lat9, Vinos de Frutas Tropicales
-- Later maintenance and v3 redesign: Melanie Prough, [PRO-Webs.net](https://pro-webs.net/)
+- Mathew O'Marah, mdo design: original All Invoices plugin, v1.0 and v1.1
+- Cindy Merkin (lat9), Vinos de Frutas Tropicales: Zen Cart 1.5 updates and packing-slip support
+- DrByte: v2.5 order-status update feature
+- Melanie Prough, [PRO-Webs.net](https://pro-webs.net/): v2.6 maintenance and v3 redesign
 
-Licensed under the GNU General Public License v2.0. See [LICENSE](LICENSE).
+## License
+
+Copyright remains with the respective contributors. This plugin is free software distributed under the [GNU General Public License v2.0](LICENSE). You may use, modify, and redistribute it under that license. It is provided without warranty.

@@ -26,8 +26,9 @@
 
 ## v3.0.1 - 2026-09-03
 
-- Corrected the Plugin Manager scripted installer that produced an HTTP 500 during installation.
-- Uses the proven install, upgrade, and uninstall method contracts and direct menu registration pattern.
+- Hardened the Plugin Manager scripted installer after the initially reported HTTP 500.
+- Added the proven install, upgrade, and uninstall method contracts and direct menu registration pattern.
+- The remaining selection-time fatal error was subsequently identified and corrected in v3.0.2.
 
 ## v3.0.0 - 2026-09-03
 
@@ -41,12 +42,27 @@
 
 ## v2.5 - 2016-03-16
 
-- Added the ability to update the status of displayed invoice orders.
+- Added the ability to update the status of displayed invoice orders. Contributed by DrByte.
 
-## v2.1 - 2014
+## v2.6 - 2019-09-12
+
+- Corrected a PHP 7.3 error for Zen Cart 1.5.6c. Maintained by PRO-Webs.net.
+
+## v2.1.0 - 2014-04-03
 
 - Added printing of all packing slips for a selected order status.
+- Corrected Chrome page breaks in the invoice template.
 
-## v2.0.0 - 2012-05-18
+## v2.0.0 - 2013-05-19
 
 - Updated the original All Invoices plugin for Zen Cart 1.5.0.
+- Moved interface text into language files.
+- Added a clear message when no orders match the selected status.
+
+## v1.1 - 2010-04-12
+
+- Corrected the product-name display.
+
+## v1.0 - 2010-03-19
+
+- Initial release by Mathew O'Marah of mdo design.
