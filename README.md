@@ -1,5 +1,7 @@
 # Print all invoices and packing slips by status for Zen Cart
 
+**Download the install ZIP:** [Print-All-Invoices-by-Status-v3.0.6.zip](https://raw.githubusercontent.com/mprough/Print-All-Invoices-by-Status-for-Zen-Cart/main/dist/Print-All-Invoices-by-Status-v3.0.6.zip). Extract it on your computer and follow the installation instructions below.
+
 Print every invoice or packing slip for orders with a selected order status in one printable batch. Each document begins on a separate printed page. The current release is **v3.0.6**.
 
 **Official Zen Cart plugin page:** [All Invoices](https://www.zen-cart.com/plugins/all-invoices-vb1083)
